@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="bg-LightGray font-body">
+    <!-- container -->
+    <div
+      class="vs:flex vs:flex-col vs:mt-0 vs:m-0 vs:w-[100vw] vs:p-0 vs:h-[10%] md:w-[50%] md:h-[75vh] md:mt-32 md:m-auto md:grid md:grid-cols-3 md:space-x-16 md:space-y-0 md:p-10 md:bg-Magnolia"
+    >
+      <!-- SIDEBAR -->
+      <nav class="vs:bg-PurplishBlue ">
+        <!-- STEPS CONTAINER -->
+        <div
+          id="nav"
+          class="svg md:flex vs:p-12 vs:pb-12 md:h-[93%] md:flex-col  md:col-span-1 md:rounded-md md:p-7 vs:w-full vs:flex-row vs:flex vs:justify-around vs:h-1/2 "
+        >
+          <!-- STEP ONE -->
+          <div class="flex space-x-5">
+            <a href="#"
+              ><div
+                class="bg-PurplishBlue border-white border text-center px-3.5 py-1 w-10 h-10 text-white rounded-full hover:bg-LightBlue hover:border-none hover:text-black transition-all duration-500 hover:pt-1"
+              >
+                1
+              </div></a
+            >
+            <div class="vs:hidden md:block">
+              <a href="#"
+                ><span class="space-x-3 text-sm text-LightGray">STEP 1</span></a
+              >
+              <a href="#"
+                ><h3 class="space-x-3 font-bold text-Magnolia">YOUR INFO</h3></a
+              >
+            </div>
+          </div>
+          <!-- STEP TWO -->
+          <div class="flex items-center space-x-6">
+            <a href="#"
+              ><div
+                class="bg-PurplishBlue border-white border text-center px-3.5 py-1 w-10 h-10 text-white rounded-full hover:bg-LightBlue hover:border-none hover:text-black transition-all duration-500 hover:pt-1"
+              >
+                2
+              </div></a
+            >
+            <div class="vs:hidden md:block">
+              <a href="#"
+                ><span class="space-x-3 text-sm text-LightGray">STEP 2</span></a
+              >
+              <a href="#"
+                ><h3 class="space-x-3 font-bold text-Magnolia">SELECT PLAN</h3></a
+              >
+            </div>
+          </div>
+          <!-- STEP THREE -->
+          <div class="flex items-center space-x-6">
+            <a href="#"
+              ><div
+                class="bg-PurplishBlue border-white border text-center px-3.5 py-1 w-10 h-10 text-white rounded-full hover:bg-LightBlue hover:border-none hover:text-black transition-all duration-500 hover:pt-1"
+              >
+                3
+              </div></a
+            >
+            <div class="vs:hidden md:block">
+              <a href="#"
+                ><span class="space-x-3 text-sm text-LightGray">STEP 3</span></a
+              >
+              <a href="#"
+                ><h3 class="space-x-3 font-bold text-Magnolia">ADD-ONS</h3></a
+              >
+            </div>
+          </div>
+          <!-- STEP FOUR -->
+          <div class="flex items-center space-x-6">
+            <a href="#"
+              ><div
+                class="bg-PurplishBlue border-white border text-center px-3.5 py-1 w-10 h-10 text-white rounded-full hover:bg-LightBlue hover:border-none hover:text-black transition-all duration-500 hover:pt-1"
+              >
+                4
+              </div></a
+            >
+            <div class="vs:hidden md:block">
+              <a href="#"
+                ><span class="space-x-3 text-sm text-LightGray">STEP 4</span></a
+              >
+              <a href="#"
+                ><h3 class="space-x-3 font-bold text-Magnolia">SUMMARY</h3></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- PERSONAL INFO -->
+      <section class="md:col-span-2 vs:-mt-10 mx-10 bg-Magnolia vs:p-8 vs:shadow-xl rounded-md vs:z-10">
+        <div class="md:space-y-3 md:mb-11">
+          <h1 class="text-4xl text-MarineBlue font-bold vs:mb-5 ">Personal info</h1>
+          <p class="text-lg text-CoolGray">Please provide your name, email address, and phone number</p>
+        </div>
+        <div class="md:space-y-5">
+          <!-- NAME FORM -->
+          <form action="#" class="">
+            <label for="text" id="name" class="block text-MarineBlue text-sm font-bold mb-2">Name</label>
+            <input type="text" id="text" name="name" class="w-full h-12 rounded-lg border-LightGray border focus:border-MarineBlue transition-all duration-150 px-3 " placeholder="Your name" required>
+ 
+          <!-- EMAIL FORM -->
+
+            <label for="email" id="name" class="block text-MarineBlue text-sm font-bold my-2">Email Address</label>
+            <input type="email" id="email" name="name" class="peer w-full h-12 rounded-lg border-LightGray border focus:border-MarineBlue focus:invalid:text-pink  focus:invalid:border-pink invalid:border-pink invalid:text-pink transition-all duration-150 px-3  " placeholder="Email address" required>
+            <p class=" vs:hidden invisible peer-invalid:visible text-pink ">Enter a valid email</p>
+        <!-- PHONE FORM -->
+            <label for="number" id="name" class="block text-MarineBlue text-sm font-bold my-2">Phone Number</label>
+            <input type="text" id="number" name="name" class="w-full h-12 rounded-lg border-LightGray border focus:border-MarineBlue transition-all duration-150 px-3  focus:invalid:text-pink  focus:invalid:border-pink invalid:border-pink invalid:text-pink" placeholder="e.g. +1 234 567 890" required>
+            <div class="vs:hidden md:block flex justify-end mt-32">
+              <button id="btn" class=" bg-PurplishBlue rounded-lg text-white text-lg p-2 px-4 hover:bg-MarineBlue transition-all duration-200   ">Next Step</button>
+              </div>
+          </form>
+        </div>
+      </section>
+       </div>
+       <div class="p-12 mt-20 flex justify-end bg-Magnolia">
+        <button id="btn" class=" bg-PurplishBlue rounded-lg text-white text-lg p-2 px-4 hover:bg-MarineBlue transition-all duration-200   ">Next Step</button>
+       </div>
+      </body>
+</html>
